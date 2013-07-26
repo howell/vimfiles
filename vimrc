@@ -2,11 +2,14 @@
 " by Sam Caldwell
 set nocompatible
 
+" replace tabs with 4 spaces
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set number
 
+" enable 256 colors and set colorscheme
+set t_Co=256
 colorscheme jellybeans
 
 " The following are commented out as they cause vim to behave a lot
@@ -19,6 +22,24 @@ set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
+
+" Setup cscope
+if has('cscope')
+    set cscopetag cscopeverbose
+
+    if has('quickfix')
+        set cscopequickfix=s-,c-,d-,i-,t-,e-
+    endif
+
+    cnoreabbrev csa cs add
+    cnoreabbrev csf cs find
+    cnoreabbrev csk cs kill
+    cnoreabbrev csr cs reset
+    cnoreabbrev css cs show
+    cnoreabbrev csh cs help
+
+    command -nargs=0 Cscope cs add $VIMSRC/src/scope.out $VIMSRC/src
+endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
