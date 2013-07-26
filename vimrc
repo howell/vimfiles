@@ -83,3 +83,5 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" Setup pathogen
+execute pathogen#infect()
