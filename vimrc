@@ -1,5 +1,7 @@
 " Vim configuration file
 " by Sam Caldwell
+
+" disable vi compatibility mode
 set nocompatible
 
 " replace tabs with 4 spaces
