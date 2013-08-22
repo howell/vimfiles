@@ -12,6 +12,7 @@ set number
 
 " enable 256 colors and set colorscheme
 set t_Co=256
+syntax on
 colorscheme jellybeans
 
 " The following are commented out as they cause vim to behave a lot
