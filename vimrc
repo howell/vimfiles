@@ -55,6 +55,10 @@ if has("autocmd")
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
   autocmd BufWinLeave * call clearmatches()
 
+  " save and restore views
+  autocmd BufWinLeave *.* mkview
+  autocmd BufWinEnter *.* silent loadview
+
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
