@@ -195,6 +195,7 @@ endif
 syn keyword	cType		int long short char void
 syn keyword	cType		signed unsigned float double
 syn keyword     cType           u8 u16 u32 i8 i16 i32 u64 i64 tBoolean
+syn keyword     cType           int8u int16u int32u
 if !exists("c_no_ansi") || exists("c_ansi_typedefs")
   syn keyword   cType		size_t ssize_t off_t wchar_t ptrdiff_t sig_atomic_t fpos_t
   syn keyword   cType		clock_t time_t va_list jmp_buf FILE DIR div_t ldiv_t
