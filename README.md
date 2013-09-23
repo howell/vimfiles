@@ -6,4 +6,4 @@
 \> git submodule init
 \> git submodule update</code></pre>
 <p>Generating (exuberant) ctags for ycm</p>
-<pre><code>ctags -R --fields=+l *</code></pre>
+<pre><code>ctags -R --fields=+l ./*</code></pre>
