@@ -25,6 +25,7 @@ set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
+set backspace=indent,eol,start
 
 " Setup cscope
 if has('cscope')
@@ -100,3 +101,18 @@ endif
 
 " Setup pathogen
 execute pathogen#infect()
+
+" Figure out what this does
+let g:syntastic_always_populate_loc_list = 1
+" Setup syntastic checkers
+"let g:syntastic_cpp_checkers = ['gcc', 'oclint']
+"let g:syntastic_cpp_oclint_args = "* -- -c"
+"let g:syntastic_c_checkers = ['gcc', 'oclint']
+"let g:syntastic_c_oclint_args = "* -- -c"
+"let g:syntastic_aggregate_errors = 1
+
+" ycm configuration
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+
