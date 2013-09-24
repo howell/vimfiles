@@ -112,7 +112,7 @@ let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_aggregate_errors = 1
 
 " ycm configuration
-let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_min_num_of_chars_for_completion = 4
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
