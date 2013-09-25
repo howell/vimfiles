@@ -1,4 +1,4 @@
 *.swp
-doc/tags
+tags
 view/
 *.pyc

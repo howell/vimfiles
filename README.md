@@ -4,5 +4,11 @@
 <p>get submodules</p>
 <pre><code>$ git submodule init
 $ git submodule update</code></pre>
+<p>install YouCompleteMe (requires vim >= 7.4 with python support)</p>
+<pre><code>$ cd bundle/YouCompleteMe
+$ ./install.sh [--clang-completer]</code></pre>
+<p>Generating vim help tags</p>
+<pre><code>$ vim
+:helptags bundle/</code></pre>
 <p>Generating (exuberant) ctags for ycm</p>
 <pre><code>$ ctags -R --fields=+l ./*</code></pre>

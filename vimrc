@@ -8,7 +8,7 @@ set nocompatible
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set number
+set shiftround
 
 " enable 256 colors and set colorscheme
 set t_Co=256
@@ -26,6 +26,11 @@ set autowrite		" Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 set backspace=indent,eol,start
+set number      " show line numbers
+set ruler       " show row,column at bottom
+set encoding=utf-8
+set autoread    " automatically load changes to file made outside of vim
+set scrolloff=2 " number of lines to keep above & below cursor
 
 " Setup cscope
 if has('cscope')
