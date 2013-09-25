@@ -12,3 +12,5 @@ $ ./install.sh [--clang-completer]</code></pre>
 :helptags bundle/</code></pre>
 <p>Generating (exuberant) ctags for ycm</p>
 <pre><code>$ ctags -R --fields=+l ./*</code></pre>
+<p>Or</p>
+<pre><code>$ alias myctags="ctags -R --fields=+l"</code></pre>
