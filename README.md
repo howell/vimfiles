@@ -7,7 +7,8 @@ $ ln -s ~/.vim/gvimrc ~/.gvimrc</code></pre>
 $ git submodule update</code></pre>
 <p>install YouCompleteMe (requires vim >= 7.4 with python support)</p>
 <pre><code>$ cd bundle/YouCompleteMe
-$ ./install.sh [--clang-completer]</code></pre>
+$ ./install.sh [--clang-completer]
+$ git submodule [init, update]</code></pre>
 <p>Generating vim help tags</p>
 <pre><code>$ vim
 :helptags bundle/</code></pre>
