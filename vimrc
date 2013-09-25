@@ -32,6 +32,10 @@ set encoding=utf-8
 set autoread    " automatically load changes to file made outside of vim
 set scrolloff=2 " number of lines to keep above & below cursor
 
+" highlight text past 80 characters
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
 " Setup cscope
 if has('cscope')
     set cscopetag cscopeverbose
