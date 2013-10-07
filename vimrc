@@ -26,7 +26,9 @@ set autowrite		" Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 set backspace=indent,eol,start
-set number      " show line numbers
+set relativenumber " relative numbering, vim >= 7.4 required to use relative and
+                   " absoulute line numbers
+set number         " show line numbers
 set ruler       " show row,column at bottom
 set encoding=utf-8
 set autoread    " automatically load changes to file made outside of vim
