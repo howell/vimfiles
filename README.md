@@ -1,14 +1,6 @@
 # vim configurations and settings
-<p>create symlink for vimrc, where the repo is in ~/.vim:</p>
-<pre><code>$ ln -s ~/.vim/vimrc ~/.vimrc
-$ ln -s ~/.vim/gvimrc ~/.gvimrc</code></pre>
-<p>get submodules</p>
-<pre><code>$ git submodule init
-$ git submodule update</code></pre>
-<p>install YouCompleteMe (requires vim >= 7.4 with python support)</p>
-<pre><code>$ cd bundle/YouCompleteMe
-$ ./install.sh [--clang-completer]
-$ git submodule [init, update]</code></pre>
+<p>Installation (requires vim >= 7.4 with Python support)</p>
+<pre><code>$ ./install.sh</code></pre>
 <p>Generating vim help tags</p>
 <pre><code>$ vim
 :helptags bundle/</code></pre>
