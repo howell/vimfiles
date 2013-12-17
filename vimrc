@@ -33,6 +33,7 @@ set ruler       " show row,column at bottom
 set encoding=utf-8
 set autoread    " automatically load changes to file made outside of vim
 set scrolloff=2 " number of lines to keep above & below cursor
+set re=1
 
 " highlight text past 80 characters
 let &colorcolumn=join(range(81,999),",")
@@ -116,6 +117,7 @@ execute pathogen#infect()
 " Figure out what this does
 let g:syntastic_always_populate_loc_list = 1
 " Setup syntastic checkers
+"let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 "let g:syntastic_cpp_checkers = ['gcc', 'oclint']
 "let g:syntastic_cpp_oclint_args = "* -- -c"
 "let g:syntastic_c_checkers = ['gcc', 'oclint']
