@@ -36,7 +36,6 @@ import ycm_core
 # CHANGE THIS LIST OF FLAGS. YES, THIS IS THE DROID YOU HAVE BEEN LOOKING FOR.
 flags = [
 #'-w',
-'--analyze',
 '-Wall',
 '-Wextra',
 # THIS IS IMPORTANT! Without a "-std=<something>" flag, clang won't know which
@@ -52,6 +51,8 @@ flags = [
 # For a C project, you would set this to 'c' instead of 'c++'.
 '-x',
 'c',
+'-I',
+'.'
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
