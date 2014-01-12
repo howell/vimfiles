@@ -34,6 +34,7 @@ set encoding=utf-8
 set autoread    " automatically load changes to file made outside of vim
 set scrolloff=2 " number of lines to keep above & below cursor
 set re=1
+set lazyredraw  " Don't redraw when executing macros (good performance config)
 
 " highlight text past 80 characters
 let &colorcolumn=join(range(81,999),",")
