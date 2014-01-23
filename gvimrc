@@ -1,5 +1,7 @@
 if hostname() == 'ubuntu'
     set guifont=Ubuntu\ Mono\ 12
+elseif has("win32")
+    set guifont=Consolas:h12
 else
     set guifont=Monaco:h12
 endif
