@@ -36,6 +36,7 @@ set scrolloff=2 " number of lines to keep above & below cursor
 set re=1
 set lazyredraw  " Don't redraw when executing macros (good performance config)
 set tags=./tags;/ " search in current directory up to root for tags file
+set cursorline  " Highlight the cursor line
 
 " highlight text past 80 characters
 let &colorcolumn=join(range(81,999),",")
