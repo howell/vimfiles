@@ -37,6 +37,7 @@ set re=1
 set lazyredraw  " Don't redraw when executing macros (good performance config)
 set tags=./tags;/ " search in current directory up to root for tags file
 set cursorline  " Highlight the cursor line
+set nofoldenable    " disable folding
 
 " highlight text past 80 characters
 let &colorcolumn=join(range(81,999),",")
@@ -135,4 +136,8 @@ let g:ycm_confirm_extra_conf = 0    " don't ask before loading a conf file
 
 " ghc-mod configuration
 let g:ghcmod_hlint_options = ['--ignore=Redundant $']
+
+" vim2hs configuration
+let g:haskell_conceal = 0   " disable all conceals, including lambda and
+                            " composition
 
