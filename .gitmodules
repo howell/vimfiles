@@ -19,3 +19,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = http://github.com/dag/vim2hs

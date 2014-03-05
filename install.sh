@@ -18,6 +18,10 @@ echo "Installing submodules"
 git submodule init
 git submodule update --recursive
 
+echo "Linking Ultisnips Files"
+mkdir -p $HOME/.vim/ftdetect
+ln -s $HOME/.vim/bundle/ultisnips/ftdetect/* $HOME/.vim/ftdetect
+
 pushd .
 
 echo "Installing YouCompleteMe"

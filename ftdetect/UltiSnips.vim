@@ -1,0 +1,1 @@
+/home/scaldwell/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
