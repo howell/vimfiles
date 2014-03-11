@@ -9,7 +9,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set shiftround
-set cursorline  " Highlight the cursor line
 
 " enable 256 colors and set colorscheme
 set t_Co=256
@@ -71,6 +70,9 @@ if has("autocmd")
   autocmd InsertEnter * match ExtraWhitespace /\s+\%#\@<!$/
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
   autocmd BufWinLeave * call clearmatches()
+
+  " just using set cursorline above wouldn't work for all files..
+  autocmd BufWinEnter * set cursorline
 
   " save and restore views
   autocmd BufWinLeave *.* mkview
