@@ -9,6 +9,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set shiftround
+set cursorline  " Highlight the cursor line
 
 " enable 256 colors and set colorscheme
 set t_Co=256
@@ -36,7 +37,6 @@ set scrolloff=2 " number of lines to keep above & below cursor
 set re=1
 set lazyredraw  " Don't redraw when executing macros (good performance config)
 set tags=./tags;/ " search in current directory up to root for tags file
-set cursorline  " Highlight the cursor line
 set nofoldenable    " disable folding
 
 " highlight text past 80 characters
