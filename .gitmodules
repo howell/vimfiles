@@ -15,10 +15,13 @@
 	url = https://github.com/Shougo/vimproc.vim.git
 [submodule "bundle/ghcmod-vim"]
 	path = bundle/ghcmod-vim
-	url = https://github.com/eagletmt/ghcmod-vim
+	url = https://github.com/howell/ghcmod-vim
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
-	url = http://github.com/dag/vim2hs
+	url = http://github.com/howell/vim2hs
+[submodule "bundle/neco-ghc"]
+	path = bundle/neco-ghc
+	url = https://github.com/howell/neco-ghc
