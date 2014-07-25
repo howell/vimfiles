@@ -35,8 +35,14 @@ set autoread    " automatically load changes to file made outside of vim
 set scrolloff=2 " number of lines to keep above & below cursor
 set re=1
 set lazyredraw  " Don't redraw when executing macros (good performance config)
-set tags=./tags;/ " search in current directory up to root for tags file
+set tags=tags,./tags;/,codex.tags;/ " search in current directory up to root for tags file
 set nofoldenable    " disable folding
+set ffs=unix,dos,mac    " Use Unix as the standard file type
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapLeader = ","
 
 " highlight text past 80 characters
 let &colorcolumn=join(range(81,999),",")
@@ -117,6 +123,9 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" Find custom built haskell executables
+let $PATH = $PATH . ':' . expand("~/.vim/.cabal-sandbox/bin")
+
 " Setup pathogen
 execute pathogen#infect()
 
@@ -143,3 +152,11 @@ let g:ghcmod_hlint_options = ['--ignore=Redundant $']
 let g:haskell_conceal = 0   " disable all conceals, including lambda and
                             " composition
 
+" Generate haskell tags with codex
+map <leader>tg :!codex update<CR>
+
+" Enable necoghc completion to work with YouCompleteMe
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
+
+" Show types in completion suggestions
+let g:necoghc_enable_detailed_browse = 1
