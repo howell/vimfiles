@@ -25,3 +25,6 @@
 [submodule "bundle/neco-ghc"]
 	path = bundle/neco-ghc
 	url = https://github.com/howell/neco-ghc
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/howell/rust.vim
