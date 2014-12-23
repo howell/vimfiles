@@ -155,6 +155,11 @@ let g:haskell_conceal = 0   " disable all conceals, including lambda and
 " Generate haskell tags with codex
 map <leader>tg :!codex update<CR>
 
+" ghcmod bindings
+map <leader>ht :GhcModType<CR>
+map <leader>hT :GhcModTypeInsert<CR>
+map <leader>hc :GhcModTypeClear<CR>
+
 " Enable necoghc completion to work with YouCompleteMe
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
