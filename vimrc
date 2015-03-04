@@ -138,6 +138,7 @@ let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 "let g:syntastic_c_checkers = ['gcc', 'oclint']
 "let g:syntastic_c_oclint_args = "* -- -c"
 let g:syntastic_aggregate_errors = 1
+let g:syntastic_haskell_checkers = ['ghcmod', 'hlint']
 
 " ycm configuration
 let g:ycm_min_num_of_chars_for_completion = 4
